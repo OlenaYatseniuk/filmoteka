@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <div class="wrapper">
+      <header class="section header">
+        <div class="container">
+          <include src="./partials/header-home.html"></include>
+        </div>
+      </header>
+      <main>
+        <a href="#" id="render"></a>
+        <include src="./partials/slider.html"></include>
+        <include src="partials/sort.html"></include>
+        <section class="section">
+          <div class="container">
+            <include src="partials/filmGallery.html"></include>
+            <include src="partials/pagination.html"></include>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <include src="./partials/footer.html"></include>
+      </footer>
+    </div>
+    <include src="./partials/main-modal.html"></include>
+    <include src="./partials/footer-modal.html"></include>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
